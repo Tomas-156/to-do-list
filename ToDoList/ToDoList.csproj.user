@@ -15,6 +15,9 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Resources\Colors.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\TaskPanelView.xaml">
       <SubType>Designer</SubType>
     </Page>

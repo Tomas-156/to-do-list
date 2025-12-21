@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Brush x:Key="ButtonPrimaryBrush">
+        #e15e40
+    </Brush>
+    <Brush x:Key="TextForegroundBrush">
+        #FF252323
+    </Brush>
+    <Brush x:Key="BackgroundPrimaryBrush">
+        #FF48443F
+    </Brush>
+    <Brush x:Key="BackgroundSecondaryBrush">
+        #FDF9EC
+    </Brush>
+    <Brush x:Key="BackgroundOverlayBrush">
+        #D8CFC0
+    </Brush>
+
+    <Color x:Key="ButtonPrimaryColor">
+        #e15e40
+    </Color>
+    <Color x:Key="TextForegroundColor">
+        #FF252323
+    </Color>
+    <Color x:Key="BackgroundPrimaryColor">
+        #FF48443F
+    </Color>
+    <Color x:Key="BackgroundSecondaryColor">
+        #FFFDF9EC
+    </Color>
+    <Color x:Key="BackgroundOverlayColor">
+        #D8CFC0
+    </Color>
+
+</ResourceDictionary>

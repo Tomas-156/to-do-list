@@ -5,8 +5,87 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ToDoList.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+             Height="500" Width="800">
+    <Grid Background="{StaticResource BackgroundPrimaryBrush}">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="10"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center">
+
+            <Label Width="Auto"
+                   Foreground="{StaticResource TextForegroundBrush}"
+                   FontSize="42"
+                   FontWeight="Bold"
+                   FontFamily="Verdana"
+                   Content="ToDo">
+
+            </Label>
+
+            <Button Margin="470,0,0,0"
+                    Style="{StaticResource ButtonStyle-Orange}"
+                    Content="+Add"
+                    >
+                    
+            </Button>
+
+            <Button Style="{StaticResource ButtonStyle-Orange}" 
+                    Content="-Remove">
+                
+            </Button>
+
+        </StackPanel>
+
+        <Rectangle Grid.Row="1" 
+                   Fill="{StaticResource BackgroundOverlayBrush}">
+
+        </Rectangle>
+
+        <TextBox  Grid.Row="0"
+                  Width="390"
+                  Height="50"
+                  Background="Transparent"
+                  BorderThickness="2"
+                  BorderBrush="{StaticResource TextForegroundBrush}"
+                  VerticalContentAlignment="Center"
+                  FontSize="24"
+                  >
             
+        </TextBox>
+
+        <Rectangle Grid.Row="2" 
+                   Fill="{StaticResource BackgroundSecondaryBrush}">
+
+        </Rectangle>
+
+        <ListView Grid.Row="2">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        
+                        <TextBlock FontSize="24">
+                            
+                        </TextBlock>
+
+                        <CheckBox HorizontalAlignment="Center"
+                                  VerticalAlignment="Center">
+                            
+                        </CheckBox>
+                        
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
     </Grid>
+
+
+    
+    
 </UserControl>

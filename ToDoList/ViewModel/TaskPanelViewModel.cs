@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ToDoList.ViewModel
 {
-    class TaskPanelViewModel
+    class TaskPanelViewModel : ViewModelBase
     {
     }
 }
