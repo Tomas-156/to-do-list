@@ -12,16 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ToDoList.ViewModel;
 
 namespace ToDoList.View
 {
-    /// <summary>
-    /// Interaction logic for TaskPanelView.xaml
-    /// </summary>
+    
     public partial class TaskPanelView : UserControl
     {
         public TaskPanelView()
         {
+            TaskPanelViewModel taskPanelViewModel = new TaskPanelViewModel();
+            DataContext = taskPanelViewModel;
             InitializeComponent();
         }
     }

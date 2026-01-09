@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ToDoList.ViewModel
 {
-    class ViewModelBase : INotifyPropertyChanged
+    internal class ViewModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

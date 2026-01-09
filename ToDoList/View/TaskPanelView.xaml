@@ -31,12 +31,14 @@
             <Button Margin="470,0,0,0"
                     Style="{StaticResource ButtonStyle-Orange}"
                     Content="+Add"
+                    Command="{Binding AddTaskCommand}"
                     >
                     
             </Button>
 
             <Button Style="{StaticResource ButtonStyle-Orange}" 
-                    Content="-Remove">
+                    Content="-Remove"
+                    Command="{Binding RemoveTaskCommand}">
                 
             </Button>
 
@@ -55,7 +57,7 @@
                   BorderBrush="{StaticResource TextForegroundBrush}"
                   VerticalContentAlignment="Center"
                   FontSize="24"
-                  >
+                  Text="{Binding NewTask}">
             
         </TextBox>
 
@@ -64,17 +66,22 @@
 
         </Rectangle>
 
-        <ListView Grid.Row="2">
+        <ListView Grid.Row="2" ItemsSource="{Binding Tasks}" SelectedItem="{Binding SelectedTask}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
                         
-                        <TextBlock FontSize="24">
+                        <TextBlock FontSize="24"
+                                   TextDecorations="{Binding StrikeTextDecoration}"
+                                   Text="{Binding Description}">
                             
                         </TextBlock>
 
                         <CheckBox HorizontalAlignment="Center"
-                                  VerticalAlignment="Center">
+                                  VerticalAlignment="Center"
+                                  BorderBrush="{StaticResource ButtonPrimaryBrush}"
+                                  IsChecked="{Binding IsDone}"
+                                  Command="{Binding SetDoneCommand}">
                             
                         </CheckBox>
                         
