@@ -1,4 +1,4 @@
-# WPF To-Do List
+#  To-Do List
 
 A simple To-Do List app built using **C#** and **WPF**. The primary goal of this project was to implement the basics of the **MVVM** pattern.
 
