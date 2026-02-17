@@ -19,7 +19,5 @@ The main focus was to learn the basics of MVVM by decoupling the UI from the bus
 2.  **Open** the solution file (`.sln`) in Visual Studio.
 3.  **Press F5** to build and run the application.
 
-<div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 10px; display: inline-block;">
-  <img width="779" height="486" alt="image" src="https://github.com/user-attachments/assets/0c391f27-8cf6-4408-9486-be040d780de9" />
-</div>
+<img width="989" height="649" alt="image" src="https://github.com/user-attachments/assets/da5d9f0b-f825-4f05-b3db-1efbbf3cab4a" />
 <p align="center"><i>Main application interface showing the task list.</i></p>
