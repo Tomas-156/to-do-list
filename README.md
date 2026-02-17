@@ -18,3 +18,7 @@ The main focus was to learn the basics of MVVM by decoupling the UI from the bus
 1.  **Clone** the repository.
 2.  **Open** the solution file (`.sln`) in Visual Studio.
 3.  **Press F5** to build and run the application.
+
+  
+<img width="779" height="486" alt="image" src="https://github.com/user-attachments/assets/0c391f27-8cf6-4408-9486-be040d780de9" />
+*Main application interface showing the task list.* 
